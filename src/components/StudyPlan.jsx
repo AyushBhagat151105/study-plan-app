@@ -3,8 +3,6 @@ import { useState } from "react";
 import WeekCard from "./WeekCard";
 import weekData from "../data/weekdata";
 
-
-
 const StudyPlan = () => {
   const [showDropdown, setShowDropdown] = useState(null);
 
@@ -12,7 +10,7 @@ const StudyPlan = () => {
     setShowDropdown((prev) => (prev === index ? null : index));
   };
   return (
-    <div className="container mx-auto p-4">
+    <div className="container mx-auto p-4 overflow-hidden">
       <h1 className="text-3xl font-bold text-center mb-6">Study Plan</h1>
       <div className="grid grid-cols-1 gap-4">
         {weekData.map((weekData, index) => (
