@@ -35,6 +35,16 @@ const WeekCard = ({ weekData }) => {
           ))}
         </ul>
       </div>
+      <div>
+        <h4 className="font-semibold text-gray-800 mb-1">Important Topics:</h4>
+        <ul className="list-disc list-inside ml-5 text-gray-600">
+          {weekData.importantTopics.map((resource, index) => (
+            <li key={index} className="mb-1">
+              {resource}
+            </li>
+          ))}
+        </ul>
+      </div>
     </div>
   );
 };
@@ -46,6 +56,7 @@ WeekCard.propTypes = {
     topics: PropTypes.arrayOf(PropTypes.string).isRequired,
     project: PropTypes.string.isRequired,
     resources: PropTypes.arrayOf(PropTypes.string).isRequired,
+    importantTopics: PropTypes.arrayOf(PropTypes.string).isRequired,
   }).isRequired,
 };
 
