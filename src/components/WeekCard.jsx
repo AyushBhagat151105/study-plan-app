@@ -27,7 +27,7 @@ const WeekCard = ({ weekData }) => {
       </div>
       <div>
         <h4 className="font-semibold text-gray-800 mb-1">Resources:</h4>
-        <ul className="list-disc list-inside ml-5 text-gray-600">
+        <ul className="list-disc list-inside ml-5 text-gray-600 overflow-hidden">
           {weekData.resources.map((resource, index) => (
             <li key={index} className="mb-1">
               {resource}
