@@ -12,6 +12,9 @@ const StudyPlan = () => {
   return (
     <div className="container mx-auto p-4 overflow-hidden">
       <h1 className="text-3xl font-bold text-center mb-6">Study Plan</h1>
+      <h4 className="text-center m-2 text-gray-400 font-semibold">
+        Just click on week and see the Goals 🚀🚀
+      </h4>
       <div className="grid grid-cols-1 gap-4">
         {weekData.map((weekData, index) => (
           <div
